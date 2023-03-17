@@ -2,17 +2,16 @@
 module.exports = {
   content: ["./public/**/*.{html}", "./src/**/*.{vue, js}"],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
-    },
     extend: {
       colors: {
         darkGray: '#343434',
-        lightGray: '#D3D3D3',
-        lightBlue: '#7BCEF7'
+        gray: '#606C68',
+        lightGray: '#9A9A9A',
+        lightBlue: '#427F8F',
+        green: '#1CAB44',
+        lightGreen: '#E3FEEE',
+        orange: '#F88105',
+        blue: '#1271CF'
       }
     },
   },

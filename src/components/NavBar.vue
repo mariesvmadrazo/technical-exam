@@ -2,7 +2,7 @@
   <nav class="flex items-center justify-between flex-wrap bg-darkGray p-5">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <img class="w-24 my-auto" src="../assets/sprout-logo.png" />
-      <span class="text-4xl tracking-tight ml-2">| HR</span>
+      <span class="text-4xl tracking-tight ml-2 text-lightGray">| HR</span>
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="flex justify-end text-md lg:flex-grow">
@@ -18,7 +18,7 @@
         </a>
       </div>
       <div class="text-lightGray mr-6">
-        <input class="bg-darkGray outline-none border-b-2 text-center" placeholder="employee search" />
+        <input class="bg-darkGray outline-none border-b-2 text-center text-lightGray border-lightGray" placeholder="employee search" />
         <font-awesome-icon class="text-xl" icon="fa-search"></font-awesome-icon>
       </div>
       <div class="text-lightGray mr-6">
@@ -28,7 +28,7 @@
         <div class="rounded-full w-6 h-6 bg-lightGray"></div>
         <a
           href="#"
-          class="inline-block text-sm px-4 py-2 leading-none text-lightBlue mt-4 lg:mt-0"
+          class="inline-block text-sm pl-4 pr-1 py-2 leading-none text-lightBlue mt-4 lg:mt-0"
           >Admin</a
         >
         <font-awesome-icon class="text-lightBlue" icon="fa-caret-down"></font-awesome-icon>
