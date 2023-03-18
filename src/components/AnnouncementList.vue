@@ -37,14 +37,8 @@
     <div id="list-wrapper" class="flex flex-col rounded border-solid border-2 border-lightGray overflow-auto">
       <div id="table">
         <div id="table-header" class=" h-16">
-          <div class="h-full flex border-solid border-b-2 border-lightGray">
-            <div class="w-56 pt-4 text-left pl-4 text-bold">TITLE</div>
-            <div class="w-56 pt-4 text-left pl-4 text-bold">MESSAGE</div>
-            <div class="w-56 pt-4 text-left pl-4 text-bold">SENT BY</div>
-            <div class="flex w-56 pt-4 text-left pl-4 text-bold">SENT THROUGH<div class="flex justify-center items-center bg-blue rounded-full text-white ml-2 h-5 w-5 text-xs"><font-awesome-icon icon="fa-info"></font-awesome-icon></div></div>
-            <div class="w-56 pt-4 text-left pl-4 text-bold">DATE CREATED</div>
-            <div class="w-56 pt-4 text-left pl-4 text-bold">START DATE</div>
-            <div class="w-56 pt-4 text-left pl-4 text-bold">END DATE</div>
+          <div class="h-full flex border-solid border-b-2 border-lightGray" v-if="announcementsHeader.length > 0">
+            <div class="w-56 pt-4 text-left pl-4 text-bold" v-for="(header, i) in announcementsHeader" :key="`header-${i+1}`" :class="header === 'Sent Through' ? 'flex' : ''">{{ header.toUpperCase() }}<div class="flex justify-center items-center bg-blue rounded-full text-white ml-2 h-5 w-5 text-xs" v-if="header === 'Sent Through'"><font-awesome-icon icon="fa-info"></font-awesome-icon></div></div>
           </div>
         </div>
         <div id="table-body">
@@ -99,6 +93,15 @@
   export default {
     data() {
       return {
+        announcementsHeader: [
+          "Title",
+          "Message",
+          "Sent By",
+          "Sent Through",
+          "Date Created",
+          "Start Date",
+          "End Date"
+        ],
         announcements: [
           {
             title: '[FOR YOUR ACTIONS] asdadasdadasdasdasdd',
@@ -112,7 +115,7 @@
             endTime: '7:30 PM'
           },
           {
-            title: 'Annual Physical Examination',
+            title: 'Annual Physical Examination asdsadasd',
             message: 'In compliance with the incerement',
             sentBy: 'Roe, Ken',
             sentThrough: ['bookmark', 'mobile'],
@@ -123,7 +126,7 @@
             endTime: '6:00 PM'
           },
           {
-            title: 'Mid-Autumn Festival',
+            title: 'Mid-Autumn Festival asdasdadad',
             message: 'We wish everyone a happy birthday',
             sentBy: 'Doe, Jane',
             sentThrough: ['bookmark', 'mobile'],
@@ -134,7 +137,7 @@
             endTime: '9:00 AM'
           },
           {
-            title: '50th General Assembly',
+            title: '50th General Assembly yasdasdasdads',
             message: 'Expelliarmus! Check up',
             sentBy: 'Doe, John',
             sentThrough: ['bookmark', 'mobile'],
@@ -156,7 +159,7 @@
             endTime: '6:00 PM'
           },
           {
-            title: 'Stocks as of Aug. 09',
+            title: 'Stocks as of Aug. 09 19990909',
             message: 'Our investors have aligned the',
             sentBy: 'King, Chow',
             sentThrough: ['bookmark'],
@@ -178,7 +181,7 @@
             endTime: '6:00 PM'
           },
           {
-            title: 'Employees of the Month',
+            title: 'Employees of the Month June to July',
             message: 'Congratulations to you',
             sentBy: 'King, Chow',
             sentThrough: ['mobile'],
