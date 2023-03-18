@@ -37,7 +37,7 @@
     <div id="list-wrapper" class="flex flex-col rounded border-solid border-2 border-lightGray overflow-auto">
       <div id="table">
         <div id="table-header" class=" h-16">
-          <div class="h-full flex border-solid border-b-2 border-lightGray" v-if="announcementsHeader.length > 0">
+          <div class="h-full flex border-solid border-b-2 border-lightGray">
             <div class="w-56 pt-4 text-left pl-4 text-bold" v-for="(header, i) in announcementsHeader" :key="`header-${i+1}`" :class="header === 'Sent Through' ? 'flex' : ''">{{ header.toUpperCase() }}<div class="flex justify-center items-center bg-blue rounded-full text-white ml-2 h-5 w-5 text-xs" v-if="header === 'Sent Through'"><font-awesome-icon icon="fa-info"></font-awesome-icon></div></div>
           </div>
         </div>
