@@ -1,5 +1,5 @@
 <template>
-  <div id="announcement-list" class="py-12 px-20 flex flex-col">
+  <div id="announcement-list" class="py-12 px-20 flex flex-col text-duskGray">
     <div class="flex justify-between items-center">
       <div class="flex flex-col items-start">
         <div class="text-2xl text-bold">Announcements</div>
@@ -7,18 +7,18 @@
           View, create, or edit announcement for all employees of your company.
         </div>
       </div>
-      <div class="h-9 p-2 rounded bg-green text-white cursor-pointer">
+      <div class="h-9 p-2 rounded-md bg-green text-white cursor-pointer">
         <font-awesome-icon icon="fa-plus"></font-awesome-icon> Post an announcement
       </div>
     </div>
     <div id="filters" class="flex justify-between items-center">
       <div class="flex">
-        <div class="flex justify-center items-center rounded h-8 py-1 px-2 bg-lightGreen text-sm mr-2 cursor-pointer">
-          <span class="rounded py-0.5 px-1 mr-2 bg-green text-white">10</span>
+        <div class="flex justify-center items-center rounded-lg h-8 py-1 px-2 bg-lightGreen text-sm mr-2 cursor-pointer">
+          <span class="rounded-lg py-0.5 px-1 mr-2 bg-green text-white">10</span>
           <span>All</span>
         </div>
         <div class="flex justify-center items-center rounded h-8 py-1 px-2 text-sm cursor-pointer">
-          <span class="rounded py-0.5 px-1 mr-2 bg-orange text-white">10</span>
+          <span class="rounded-lg py-0.5 px-1 mr-2 bg-orange text-white">10</span>
           <span>Drafts</span>
         </div>
       </div>

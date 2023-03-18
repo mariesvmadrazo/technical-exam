@@ -3,7 +3,7 @@
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <img class="w-24 my-auto" src="../assets/sprout-logo.png" />
       <span class="w-0.5 h-10 ml-2 bg-lightGray"></span>
-      <span class="text-4xl tracking-tight ml-2 text-lightGray">HR</span>
+      <span class="text-4xl tracking-tight ml-2 text-white">HR</span>
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="flex justify-end text-md lg:flex-grow">
