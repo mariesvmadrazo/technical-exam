@@ -43,8 +43,8 @@
         </div>
         <div id="table-body">
           <div v-for="(announcement, i) in announcements" :key="`announcement-${i+1}`" class="flex border-solid border-b-2 border-lightGray items-center">
-            <div class="w-56 py-1 text-left pl-4"><span>{{ announcement.title }}</span></div>
-            <div class="w-56 py-1 text-left pl-4">{{ announcement.message }}</div>
+            <div class="w-56 py-1 text-left pl-4 whitespace-nowrap overflow-hidden text-ellipsis"><span>{{ announcement.title }}</span></div>
+            <div class="w-56 py-1 text-left pl-4 whitespace-nowrap overflow-hidden text-ellipsis">{{ announcement.message }}</div>
             <div class="w-56 py-1 text-left pl-4">{{ announcement.sentBy }}</div>
             <div class="w-56 py-1 text-left pl-4">
               <font-awesome-icon class="mr-2" v-for="(thru, i) in announcement.sentThrough" :key="`sent-through-${i+1}`" :icon="thru === 'mobile' ? `fa-${thru}-alt` : `fa-${thru}`"></font-awesome-icon>
@@ -53,13 +53,13 @@
             <div class="w-56 py-1 text-left pl-4">
               <div>
                 <div>{{ announcement.startDate }}</div>
-                <div class="time">{{ announcement.startTime }}</div>
+                <div class="time text-gray">{{ announcement.startTime }}</div>
               </div>
             </div>
             <div class="w-56 py-1 text-left pl-4">
               <div>
                 <div>{{ announcement.dateCreated }}</div>
-                <div class="time">{{ announcement.endTime }}</div>
+                <div class="time text-gray">{{ announcement.endTime }}</div>
               </div>
             </div>
           </div>
@@ -75,11 +75,11 @@
           </div>
         </div>
         <div class="flex w-1/6 justify-between items-center">
-          <font-awesome-icon icon="step-backward"></font-awesome-icon>
-          <font-awesome-icon icon="caret-left"></font-awesome-icon>
+          <font-awesome-icon icon="step-backward" class="cursor-pointer"></font-awesome-icon>
+          <font-awesome-icon icon="caret-left" class="cursor-pointer"></font-awesome-icon>
           <div class="flex items-center">Page <div class="rounded mx-2 px-2 border-solid border-2 border-lightGray">1</div> of 1</div>
-          <font-awesome-icon icon="caret-right"></font-awesome-icon>
-          <font-awesome-icon icon="step-forward"></font-awesome-icon>
+          <font-awesome-icon icon="caret-right" class="cursor-pointer"></font-awesome-icon>
+          <font-awesome-icon icon="step-forward" class="cursor-pointer"></font-awesome-icon>
         </div>
         <div class="flex w-1/5 justify-end">
           Showing 1 - 10 of 1
@@ -229,13 +229,7 @@
 #list-wrapper {
   height: calc(100% - 120px);
 }
-#table-body > div > div {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-#table-body .time {
+.time {
   font-size: 0.825rem;
-  color: gray;
 }
 </style>
