@@ -14,21 +14,21 @@
     <div id="filters" class="flex justify-between items-center">
       <div class="flex">
         <div class="flex justify-center items-center rounded-lg h-8 py-1 px-2 bg-lightGreen text-sm mr-2 cursor-pointer text-bold">
-          <span class="rounded-lg py-0.5 px-1 mr-2 bg-green text-white">10</span>
+          <span class="rounded-lg px-1.5 mr-2 bg-green text-white">10</span>
           <span class="text-green">All</span>
         </div>
         <div class="flex justify-center items-center rounded h-8 py-1 px-2 text-sm cursor-pointer text-bold">
-          <span class="rounded-lg py-0.5 px-1 mr-2 bg-orange text-white">10</span>
+          <span class="rounded-lg px-1.5 mr-2 bg-orange text-white">10</span>
           <span>Drafts</span>
         </div>
       </div>
       <div class="flex">
-        <div class="rounded w-48 h-8 mr-6 outline-none border-solid border-2 border-lightGray">
+        <div class="rounded w-80 h-8 mr-6 outline-none border-solid border-2 border-lightGray">
           <select class="rounded w-full h-full outline-none">
             <option value="1">Filter by</option>
           </select>
         </div>
-        <div class="flex justify-center items-center rounded w-48 h-8 border-solid border-2 border-lightGray">
+        <div class="flex justify-center items-center rounded w-80 h-8 border-solid border-2 border-lightGray">
           <input class="w-10/12 outline-none" placeholder="Search..." />
           <font-awesome-icon icon="fa-search" class="text-lightGray"></font-awesome-icon>
         </div>

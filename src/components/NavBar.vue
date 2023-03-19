@@ -9,7 +9,7 @@
       <div class="flex justify-end text-md lg:flex-grow">
         <a
           href="#"
-          class="block mt-4 lg:inline-block lg:mt-0 text-lightGray hover:text-white mr-6"
+          class="block lg:inline-block lg:mt-0 text-lightGray hover:text-white mr-6"
           v-for="navBarItem in navBarItems"
           :key="`nav-bar-${navBarItem.name}`"
         >
