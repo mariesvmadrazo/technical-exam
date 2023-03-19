@@ -66,7 +66,7 @@
         </div>
       </div>
       <div id="list-footer" class="w-full h-full flex px-4 py-3 items-center justify-between">
-        <div class="flex w-1/5 items-center justify-center">
+        <div class="flex w-1/5 items-center">
           <div>Items per page</div>
           <div class="rounded w-18 h-8 ml-2 outline-none border-solid border-2 border-lightGray">
             <select class="rounded outline-none">
@@ -81,7 +81,7 @@
           <font-awesome-icon icon="caret-right"></font-awesome-icon>
           <font-awesome-icon icon="step-forward"></font-awesome-icon>
         </div>
-        <div class="flex w-1/5 justify-center">
+        <div class="flex w-1/5 justify-end">
           Showing 1 - 10 of 1
         </div>
       </div>
