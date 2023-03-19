@@ -11,7 +11,7 @@
           href="#"
           class="block lg:inline-block lg:mt-0 text-lightGray hover:text-white mr-6"
           v-for="navBarItem in navBarItems"
-          :key="`nav-bar-${navBarItem.name}`"
+          :key="`nav-${navBarItem.name}`"
         >
           {{ navBarItem.name }}
           <font-awesome-icon icon="fa-caret-down" v-if="navBarItem.dropdown">
